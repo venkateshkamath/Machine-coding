@@ -57,6 +57,7 @@ const Folder = ({ handleInsert, explorer }) => {
           {explorer.items.map((item) => {
             return (
               <div>
+                
                 <Folder handleInsert={handleInsert} explorer={item} />
               </div>
             );
@@ -67,7 +68,7 @@ const Folder = ({ handleInsert, explorer }) => {
   } else {
     return (
       <div>
-        <span>📄FILE{explorer.name}</span>
+        <span>📄{explorer.name}</span>
       </div>
     );
   }
